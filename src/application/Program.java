@@ -10,27 +10,30 @@ public class Program {
 
         Locale.setDefault(Locale.US);
         Scanner scanner = new Scanner(System.in);
-        double xA, xB, xC,yA, yB, yC;
+        double a, b, c;
         Triangule x,y;
         x = new Triangule();
         y = new Triangule();
 
         System.out.println("Enter the measure of Triangule X; ");
-        xA = scanner.nextDouble();
-        xB = scanner.nextDouble();
-        xC = scanner.nextDouble();
+        x.a = scanner.nextDouble();
+        x.b = scanner.nextDouble();
+        x.c = scanner.nextDouble();
+
+
 
         System.out.println("Enter the measure of Triangule Y; ");
-        yA = scanner.nextDouble();
-        yB = scanner.nextDouble();
-        yC = scanner.nextDouble();
+        y.a = scanner.nextDouble();
+        y.b = scanner.nextDouble();
+        y.c = scanner.nextDouble();
 
-        double areaX = x.area();
+
         double areaY = y.area();
+        double areaX = x.area();
 
 
-        System.out.println("Triangule X area= ", areaX);
-        System.out.println("Triangule Y area= ", areaY);
+        System.out.printf("Triangule X area= %.4f%n ", areaX);
+        System.out.printf("Triangule Y area= %.4f%n", areaY);
 
         if (areaX > areaY) {
             System.out.println("Large Area  is AreaX") ;
