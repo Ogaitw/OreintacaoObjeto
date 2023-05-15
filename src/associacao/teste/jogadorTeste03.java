@@ -17,6 +17,5 @@ public class jogadorTeste03 {
         jogador.imprime();
         System.out.println("===== Time====");
         time.imprime();
-
     }
 }
